@@ -1,0 +1,138 @@
+body {
+  font-size: 16px;
+ }
+ h2 {
+   text-align: center;
+}
+p{
+  padding: 40px 10px 30px 10px;
+  background: gray;
+}
+.container{
+  width: 100%;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: gray;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  color: white;
+  font-family: "Calibri"
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .2;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+.navbar .container {
+  margin: 0;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  background: white;
+  text-align: center;
+  border: 1pt solid black;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+
+#menu-tile{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+  background-position: center;
+}
+
+#menu-tile span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  background-color: gray;
+  color: black;
+  opacity: .8;
+}
+
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #collapsable-nav {
+    visibility: hidden;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #collapsable-nav {
+    visibility: hidden;
+  }
+  /* End Header */
+
+  /* Home Page */
+
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+ #collapsable-nav {
+    visibility: hidden;
+  }
+  .container{
+  width: 50%;
+}
+  /* End Home Page */
+
+}
+
+
+
+
